@@ -1,0 +1,217 @@
+header {
+  height: 6rem;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  font-size: 1.3rem;
+}
+
+header a {
+  margin: 1rem;
+  text-decoration: none;
+  color: #0770e3;
+}
+
+header a:hover {
+  text-decoration: underline;
+  color: #084eb2;
+}
+
+.icon {
+  flex: 1;
+}
+
+.icon img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.login-btn {
+  margin: 1rem;
+  border-radius: 6px;
+  font-size: 1.3rem;
+  color: #084eb2;
+  background-color: #dddde5;
+}
+
+.login-btn:hover {
+  background-color: #cdcdd7;
+}
+
+.logout-btn {
+  margin: 1rem;
+  border-radius: 6px;
+  font-size: 1.3rem;
+  color: #084eb2;
+}
+
+.logout-btn:hover {
+  background-color: #cdcdd7;
+}
+
+.search-area {
+  width: 100%;
+  height: 104px;
+  background-color: #042759;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar {
+  height: 60%;
+  width: 15%;
+  background-color: white;
+}
+
+#location {
+  width: 100%;
+  height: 60%;
+  border: none;
+}
+
+#date {
+  width: 100%;
+  height: 60%;
+  border: none;
+}
+
+#numberOfRoom {
+  width: 100%;
+  height: 60%;
+  border: none;
+}
+.search-btn {
+  background-color: #00a698;
+  border-radius: 0 10px 10px 0;
+  width: 10%;
+  height: 65%;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.search-btn:hover {
+  background-color: #00887c;
+}
+
+.sticky {
+  position: sticky;
+  top: 104px;
+}
+
+.content {
+  background-color: #f1f2f8;
+  padding: 10px;
+}
+
+.orderBar {
+  height: 4rem;
+  width: 100%;
+  margin: 10px 0px 10px 0px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+}
+
+.orderBar button {
+  background-color: white;
+  border: 0;
+}
+
+.orderBar button:hover {
+  border-bottom: 3px solid #dddde5;
+}
+
+.result {
+  background-color: #f1f2f8;
+}
+
+.hotel-card {
+  display: flex;
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 100%;
+  height: 20%;
+  background-color: white;
+  margin-bottom: 15px;
+}
+
+.part1 {
+  width: 34%;
+  height: 100%;
+  padding: 15px;
+}
+
+.part2 {
+  width: 40%;
+  height: 100%;
+  padding: 15px;
+}
+
+.part3 {
+  width: 26%;
+  height: 100%;
+  padding: 15px;
+}
+
+.detail-btn {
+  border-radius: 8px;
+  color: white;
+  background-color: #00a698;
+  font-size: 1.5rem;
+}
+
+.detail-btn:hover {
+  background-color: #00887c;
+}
+
+#gym {
+  font-size: 3rem;
+  margin: 0.5rem;
+  /* background-color: #f1f2f8; */
+}
+
+#pool {
+  font-size: 3rem;
+  margin: 0.5rem;
+  /* background-color: #f1f2f8; */
+}
+
+#spa {
+  font-size: 3rem;
+  margin: 0.5rem;
+  /* background-color: #f1f2f8; */
+}
+
+#wifi {
+  font-size: 3rem;
+  margin: 0.5rem;
+  /* background-color: #f1f2f8; */
+}
+
+#map {
+  height: 100vh;
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #02122c;
+  text-align: center;
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer a:hover {
+  color: white;
+  text-decoration: underline;
+}

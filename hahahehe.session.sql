@@ -1,0 +1,2 @@
+curl https://api.stripe.com/v1/checkout/sessions/cs_test_a16vj6ihkrMuceGXqBZhtxOJ3diaFAz5kddgtPbX94xWYj0F9PqzHqkmX7/line_items \
+  -u sk_test_51M3GvwI11DBOYm9qoCxuY0tNzOvzyd5E6oddM0Xx8ebV0RHIkyiLxQJpGnOV4OOzXIrEmBFf5AObp6SZOPSnPSe1006bX3w2Zn:

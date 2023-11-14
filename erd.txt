@@ -1,0 +1,56 @@
+hotel
+----------
+id pk
+hotel_name varchar(50) 
+price integer 
+gym boolean 
+pool boolean 
+wifi boolean
+spa boolean
+level integer
+distract varchar(255)
+address varchar(500) 
+room_number varchar(50) 
+
+
+booking
+--------------
+id pk
+booking_date DATE 
+created_at TIMESTAMP 
+hotel_info_id fk   
+users_id fk   
+
+users
+------
+id pk
+admin boolean
+username VARCHAR(255)
+password VARCHAR(255)
+created_at TIMESTAMP 
+updated_at TIMESTAMP
+
+ban
+---------
+id pk
+users_id fk
+created_at TIMESTAMP 
+reason varchar(500) 
+ban_date integer
+
+hotel_review
+------------
+id pk
+star integer 
+users_id integer fk
+created_at TIMESTAMP 
+
+comment
+---------
+id pk
+users_id integer fk
+comment varchar(1000) 
+image varchar(255)
+hotel_id integer fk
+created_at TIMESTAMP 
+

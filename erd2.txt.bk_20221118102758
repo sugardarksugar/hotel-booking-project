@@ -1,0 +1,100 @@
+# Visualize on https://erd.surge.sh
+# or https://quick-erd.surge.sh
+#
+# Relationship Types
+#  -    - one to one
+#  -<   - one to many
+#  >-   - many to one
+#  >-<  - many to many
+#  -0   - one to zero or one
+#  0-   - zero or one to one
+#  0-0  - zero or one to zero or one
+#  -0<  - one to zero or many
+#  >0-  - zero or many to one
+#
+////////////////////////////////////
+
+
+booking
+-------
+id integer PK
+booking_date date
+hotel_id integer FK >- hotel.id
+users_id integer FK >- users.id
+
+
+ban
+---
+id integer PK
+users_id integer FK >- users.id
+reason varchar(500) NULL
+ban_date integer NULL
+
+
+hotel_review
+------------
+id integer PK
+star integer NULL
+users_id integer FK >- users.id
+hotel_id integer FK >- hotel.id
+comment_id integer NULL FK >- comment.id
+
+
+hotel_image
+-----------
+id integer PK
+hotel_id integer
+image_name varchar(255)
+
+
+users
+-----
+id integer PK
+admin boolean
+username varchar(255)
+password varchar(255)
+email varchar(255) NULL
+
+
+comment
+-------
+id integer PK
+users_id integer FK >- users.id
+comment varchar(1000)
+image varchar(255) NULL
+hotel_id integer FK >- hotel.id
+
+
+payment_record
+--------------
+id integer PK
+email varchar(255) NULL
+price integer NULL
+reference_id varchar(255) NULL
+status varchar(50) NULL
+receipts varchar(255) NULL
+hotel_name varchar(255) NULL
+currency varchar(30) NULL
+payment_intent_id varchar(255) NULL
+user_id integer NULL
+internal_references_id varchar(60) NULL
+number_of_room integer NULL
+checkin_date date NULL
+hotel_id integer NULL
+
+
+hotel
+-----
+id integer PK
+hotel_name varchar(50)
+price integer
+gym boolean
+pool boolean
+wifi boolean NULL
+spa boolean NULL
+level integer NULL
+distract varchar(255) NULL
+address varchar(500)
+total_room_number integer
+x varchar(30) NULL
+y varchar(30) NULL

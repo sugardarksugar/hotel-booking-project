@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Page</title>
+    <!-------Full Calender CDN--------------->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.css"
+    />
+    <link rel="stylesheet" href="./css/adminPage.css" />
+  </head>
+
+  <body>
+    <!-- header -->
+    <header>
+      <div class="icon">
+        <a href="/"><img src="hotel.png" /></a>
+      </div>
+      <div class="userinformation"></div>
+      <div>
+        <a href="help.html">Help</a>
+
+        <a href="user.html">
+          <button class="login-btn">My account</button>
+        </a>
+      </div>
+    </header>
+    <!-- header -->
+    <div id="content">
+      <h1 id="adminPanel">Admin Panel</h1>
+      <div class="calender-box">
+        <div id="calendar"></div>
+      </div>
+      <div id="boxContainer">
+        <div class="box"></div>
+      </div>
+      <div>
+        <canvas id="myChart"></canvas>
+      </div>
+    </div>
+    <!---------------------Footer---------------------------->
+    <footer>
+      <div>Hotel | FLM Scanner- Search and compare hotels with FLM Scanner</div>
+      <div>FLM Scanner Limited 2022</div>
+      <div>
+        <a href="#">Cookie policy</a> | <a href="#">Privacy policy</a> |
+        <a href="#">Terms of service</a>
+      </div>
+    </footer>
+    <!------Full Calender Script----------------->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.3/main.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/adminPage.js"></script>
+  </body>
+</html>
